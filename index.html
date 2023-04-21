@@ -10,30 +10,53 @@
     <title>Document</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm bg-warning bg-opacity-25">
+    <nav
+      class="navbar navbar-expand-sm navbar-dark bg-dark rounded rounded-5 m-5 p-1"
+    >
       <div class="container-fluid d-flex flex-row justify-content-start">
         <img
-          src="images/Logo.png"
+          src="images/Nav-Logo.png"
           alt="Favorite-places-logo"
-          class="navbar-brand"
-          height="100rem"
+          class="navbar-brand ms-1 pe-5 rounded rounded-4"
+          height="95rem"
         /><button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navdrop"
+          data-bs-target="#navbarNavDarkDropdown"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <ul
-          class="navbar-nav d-flex flex-row justify-content-around collapse navbar-collapse"
-          id="navdrop"
+          class="navbar-nav d-flex flex-row justify-content-start collapse navbar-collapse"
+          id="navbarNavDarkDropdown"
         >
-          <li class="nav-item"><a class="nav-link" href="">Home</a></li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Favorite Places</a>
+          <li class="nav-item ms-1 me-5 ps-1 pe-5 fs-3">
+            <a class="nav-link" href="home.html">Home</a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+          <li class="nav-item ms-1 me-5 ps-3 pe-5 fs-3">
+            <div class="dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                id="navbarDarkDropdownMenuLink"
+                data-bs-toggle="dropdown"
+                >Favorite Places</a
+              >
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a href="#" class="dropdownitem">1</a></li>
+                <li><a href="#" class="dropdownitem">2</a></li>
+                <li><a href="#" class="dropdownitem">3</a></li>
+                <li><a href="#" class="dropdownitem">4</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item ms-1 pe-4 ps-3 fs-3">
+            <a class="nav-link link-danger:hover" href="contact.html"
+              >Contact</a
+            >
+          </li>
         </ul>
       </div>
     </nav>
